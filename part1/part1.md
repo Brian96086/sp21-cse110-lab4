@@ -48,6 +48,6 @@ Basic Operations & Type Conversion
 5. Explain the difference between == and === operators
    The === implements strict equality,checking data types strictly and doesn't cast values. If the data types are different,even though the casted results are equal, it evaluates to false. On the other hand, == allows operands to be casted, so as logn as the casted results are equal, the result will be true. For example '2'==2 results to true because '2' is casted to an integer(2). If we perform '2'===2, it will result to false, because string/char type is different from integer type. 
 7. Explain modifyArray([1,2,3], doSomething)
-   1. 
+   1. It's going to return [2,4,6]. Within the for loop of modifyArray, we're pushing value of callback, with argument = array[i], into the newArr. The callback method corresponds to the doSomething method, which multiplies the current number by 2. Therefore, each iteration within the for loop pushes double the original value into the newArr. 
 9.  1 4 3 2
    
